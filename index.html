@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="nice_looking_up_menu.css">
 <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
@@ -26,83 +26,90 @@
     <div class="acilan_bolumler">
         
         <div class="hakkinda_acilan_bolum">
-            <h1 style="text-align: center;">HAKKINDA</h1>
+            <h1 style="text-align: center;">About Me</h1>
             <hr style="background-color: black; padding-top: 0.5vh; border-radius: 5vh;">
+            <p>Hello I am Ahmet,</p>
+            <p>I am a high school student in Turkey. I love to design WEB sites and models.</p>
             
         </div>
 
         <div class="katagori_acilan_bolum">
-            <h1 style="text-align: center;">KATAGORİLER</h1>
+            <h1 style="text-align: center;">Categories</h1>
             <hr style="background-color: black; padding-top: 0.5vh; border-radius: 5vh;">
             <table align="center">
-            <td><button class="katgoriler_acilan_bolumler__button" id="katogoriler_dersler_acilan_bolum__acma_buttonu">Dersler</button></td>
-            <td><button class="katgoriler_acilan_bolumler__button" id="katogoriler_sinavlar_acilan_bolum__acma_buttonu">Sınavlar</button></td>
+            <td><button class="katgoriler_acilan_bolumler__button" id="katogoriler_dersler_acilan_bolum__acma_buttonu">My School</button></td>
+            <td><button class="katgoriler_acilan_bolumler__button" id="katogoriler_sinavlar_acilan_bolum__acma_buttonu">What do I do?</button></td>
             </table>
         </div>
 
         <div> <!-- Katagorilerin altında açılan bölümler. -->
             
             <div class="katogoriler_dersler_acilan_bolum">
-                <button class="katagoriler_alt_bolumleri_kapatma_buttonu"><i class='bx bxs-left-arrow-alt'></i></button><h1 style="text-align: center;">DERSLER</h1>
+                <button class="katagoriler_alt_bolumleri_kapatma_buttonu"><i class='bx bxs-left-arrow-alt'></i></button><h1 style="text-align: center;">My School</h1>
                 <hr style="background-color: black; padding-top: 0.5vh; border-radius: 5vh;">
+                <p>I am a student in Science and Technology Hight School in Turkey.</p>
             </div>
 
             <div class="katogoriler_sinavlar_acilan_bolum">
-                <button class="katagoriler_alt_bolumleri_kapatma_buttonu"><i class='bx bxs-left-arrow-alt'></i></button><h1 style="text-align: center;">SINAVLAR</h1>
+                <button class="katagoriler_alt_bolumleri_kapatma_buttonu"><i class='bx bxs-left-arrow-alt'></i></button><h1 style="text-align: center;">What do I do?</h1>
                 <hr style="background-color: black; padding-top: 0.5vh; border-radius: 5vh;">
+                <p>I am a WEB site designer.</p>
+                <p>I know: <b>html, css, js, jQuerry and python</b>.</p><br>
+                <p>I am a designer.</p>
+                <p>I am using Fusion 360 to desgin my projects.</p>
             </div> <!-- Katagorilerin altında açılan bölümler bitiş. -->
 
         </div>
 
         <div class="iletisim_acilan_bolum">
-            <h1 style="text-align: center;">İLETİŞİM</h1>
+            <h1 style="text-align: center;">Contact</h1>
             <hr style="background-color: black; padding-top: 0.5vh; border-radius: 5vh;">
         </div>
 
         <div class="ayarlar_acilan_bolum">
-            <h1 style="text-align: center;">AYARLAR</h1>
+            <h1 style="text-align: center;">Settings</h1>
             <hr style="background-color: black; padding-top: 0.5vh; border-radius: 5vh;">
             <table align="center" border="1">
-                <td style="text-align: center;" colspan="5">Arka plan rengi:</td>
+                <td style="text-align: center;" colspan="5">Background Color</td>
                 <tr>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_arka_plan_rengi__yesil">Yeşil</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_arka_plan_rengi__sari">Sarı</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_arka_plan_rengi__mavi">Mavi</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_arka_plan_rengi__siyah">Siyah</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_arka_plan_rengi__beyaz">Beyaz</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_arka_plan_rengi__yesil">Green</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_arka_plan_rengi__sari">Yellow</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_arka_plan_rengi__mavi">Blue</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_arka_plan_rengi__siyah">Black</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_arka_plan_rengi__beyaz">White</button></td>
                 </tr>
             </table><br><br>
 
             <table align="center" border="1">
-                <td style="text-align: center;" colspan="5">Yazı rengi:</td>
+                <td style="text-align: center;" colspan="5">Color</td>
                 <tr>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_yazi_rengi__yesil">Yeşil</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_yazi_rengi__sari">Sarı</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_yazi_rengi__mavi">Mavi</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_yazi_rengi__siyah">Siyah</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_yazi_rengi__beyaz">Beyaz</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_yazi_rengi__yesil">Green</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_yazi_rengi__sari">Yellow</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_yazi_rengi__mavi">Blue</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_yazi_rengi__siyah">Black</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_yazi_rengi__beyaz">White</button></td>
                 </tr>
             </table><br><br>
 
             <table align="center" border="1">
-                <td style="text-align: center;" colspan="5">İkon rengi:</td>
+                <td style="text-align: center;" colspan="5">Icon Color</td>
                 <tr>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_ikon_rengi__yesil">Yeşil</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_ikon_rengi__sari">Sarı</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_ikon_rengi__mavi">Mavi</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_ikon_rengi__siyah">Siyah</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_ikon_rengi__beyaz">Beyaz</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_ikon_rengi__yesil">Green</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_ikon_rengi__sari">Yellow</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_ikon_rengi__mavi">Blue</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_ikon_rengi__siyah">Black</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_ikon_rengi__beyaz">White</button></td>
                 </tr>
             </table><br><br>
 
             <table align="center" border="1">
-                <td style="text-align: center;" colspan="5">Menü aralığı:</td>
+                <td style="text-align: center;" colspan="5">Menu Range</td>
                 <tr>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_menu_araligi__cok">Çok</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_menu_araligi__orta">Orta</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_menu_araligi__az">Az</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_menu_araligi__cok_az">Çok az</button></td>
-                <td><button class="ayarlar_buttonlar" id="ayarlar_menu_araligi__yok">Yok</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_menu_araligi__cok">A Lot</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_menu_araligi__orta">Middle</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_menu_araligi__az">Short</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_menu_araligi__cok_az">Very Short</button></td>
+                <td><button class="ayarlar_buttonlar" id="ayarlar_menu_araligi__yok">None</button></td>
                 </tr>
             </table>
         </div>
@@ -111,6 +118,6 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="nice_looking_up_menu.js"></script>
 </body>
 </html>
