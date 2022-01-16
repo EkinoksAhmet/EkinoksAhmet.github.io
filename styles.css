@@ -1,100 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vujahday+Script&display=swap');
+
+/*
+
+font-family: 'Dancing Script', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Vujahday Script', cursive;
+
+*/
+
+
 body {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.up_menu_mother_table {
-    background-color: aqua;
-    font-size: 4vh;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 1vh;
-    border-bottom-left-radius: 3vh;
-    border-bottom-right-radius: 3vh;
-}
-
-.up_menu_mother_table i{
-    border-radius: 100%;
-    margin-right: 1vh;
-    margin-left: 1vh;
-    background-color: aqua;
-    font-size: 5vh;
-}
-
-.acma_buttonları {
-    border-radius: 100%;
-    margin-right: 1vh;
-    margin-left: 1vh;
-    padding: 1vh;
-    background-color: aqua;
-    border: none;
-}
-
-.icon_mothertable:hover {
-    transform: translateY(4vh);
-    transition: 0.4s;
-}
-
-#close_mainmenu_button {
+.navbar {overflow: hidden;
+    background-color: #96CEB4;
+    position: relative;
+    top: 0;
     width: 100%;
-    z-index: -100;
-    position: absolute;
-    height: 5vh;
-    opacity: 0%;
+    height: 100px;
+    z-index: 1;
 }
 
-.acilan_bolumler {
-    left: 0%;
-    top: 100%;
-    transform: translateY(-100%);
-    border-top-right-radius: 5vh;
-    position: absolute;
-    background-color: aqua;
-    width: 30%;
-    max-width: 30%;
-    max-height: 50%;
-    overflow: auto;
+.navbar .navbar-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
-.katgoriler_acilan_bolumler__button {
-    background-color: darkgray;
-    color: white;
-    border-radius: 5vh;
-    border: none;
-    font-size: 3vh;
-    padding: 1vh;
-    text-align: center;
+.navbar-header img {
+    height: 100px;
+    width: auto;
 }
 
-.katgoriler_acilan_bolumler__button:hover {
-    transition: 0.5s;
-    background-color: red;
+.navbar .navbar-go {
+    /* put this flex item on the right and give margin right 10px*/
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
 }
 
-.katagoriler_alt_bolumleri_kapatma_buttonu {
-    background-color: lightcoral;
-    font-size: 4vh;
-    border: none;
-    border-bottom-right-radius: 100%;
-    color: deepskyblue;
+.navbar .navbar-go ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #FFEEAD;
+    border-radius: 10px;
 }
 
-.katagoriler_alt_bolumleri_kapatma_buttonu:hover {
-    transition: 0.4s;
-    color: white;
-    background-color: black;
+.navbar .navbar-go li{
+    float: left;
+    list-style-type: none;
 }
 
-.ayarlar_buttonlar {
-    background-color: beige;
-    text-align: center;
-    border: none;
-    border-radius: 1vh;
+.navbar .navbar-go li a{
+    display: block;
+    padding: 14px 16px;
     text-decoration: none;
+    color: #D9534F;
 }
 
-.ayarlar_buttonlar:hover {
-    background-color: black;
-    color: chartreuse;
-    transition: 0.2s;
+.navbar .navbar-go li a:hover {
+    background-color: #FFAD60;
+    transition: 0.4s;
+}
+
+.navbar-title p {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-left: 20px;
+}
+
+.responsive-menu {
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: #876445;
+    display: none;
+}
+
+.responsive-menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.responsive-menu ul li{
+    margin: 20px;
+    font-weight: bolder;
+}
+
+.responsive-menu ul li a {
+    color: #F4DFBA;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #CA965C;
+    border-radius: 10px;
+}
+
+.responsive-menu ul li a:hover {
+    background-color: #745634;
+}
+
+#menuButton {
+    background-color: #FFEEAD;
+    color: #D9534F;
+    padding: 10px;
+    border-radius: 20px 0px 20px 0px;
+    cursor: pointer;
+}
+
+#menuButton:hover {
+    background-color: #FFAD60;
+    transition: 0.4s;
+}
+
+.menuButtonMain {
+    display: none;
+}
+
+#menuButton {
+    border: none;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .menuButtonMain {
+        display: block;
+    }
+
+    .navbar .navbar-go {
+        display: none;
+    }
+
+}
+
+.comment-box {
+    padding: 1em;
+}
+
+.my-text-area-container {
+    padding: 1em;
+}
+   
+.my-text-area {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 1em;
+    background-color: rebeccapurple;
 }
